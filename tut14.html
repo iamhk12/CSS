@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <!-- . for class -->
+    <!-- # for id  -->
+
+    <!-- Internal CSS -->
+    <style>
+        /* Element selector */
+        p {
+            color: red;
+            border: 2px solid black;
+        }
+
+        /* id selector */
+        #para2 {
+            color: blue;
+        }
+
+        /* class selector */
+        .tealbg {
+            color: white;
+            background-color: teal;
+            ;
+        }
+
+        /* group selector */
+        footer,
+        span {
+            background-color: pink;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h3>CSS SELECTORS</h3>
+    <p class="tealbg"> This is a simple paragragh to demonstrate css selectors </p>
+
+    <p>This is a simple paragragh to demonstrate css selectors </p>
+    
+    <p class="tealbg">This is a simple paragragh to demonstrate css selectors </p>
+    
+    <p id="para2">This is another simple paragragh to demonstrate css selectors </p>
+    
+    <div>
+        <p>This is yet another simple paragragh to demonstrate css selectors </p>
+    </div>
+    
+    <span>This is span. </span>
+    
+    <footer>This is footer</footer>
+</body>
+
+</html>

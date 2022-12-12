@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+
+        }
+
+        header::before {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            background: url('https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+
+            /* background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;  */
+            /* random images  */
+
+
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 0.5;
+            filter: blur(10px);
+            /*using blur func*/
+
+
+        }
+
+        section {
+            height: 400px;
+            /* border: 2px solid salmon; */
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* section:after{
+            content: "This is a content";
+        } */
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .navig {
+            font-size: 20px;
+            display: flex;
+            font-family: 'Ubuntu';
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navig">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Servies</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, vero. Id tempora quam laborum voluptatum
+            repudiandae omnis cumque possimus. Praesentium deleniti soluta est vel, eligendi eveniet eaque similique
+            nulla veniam voluptas, minima quis mollitia.</p>
+    </section>
+    <!-- <hr> -->
+
+
+</body>
+
+</html>

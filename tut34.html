@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        html {
+            background-color: rgb(154, 235, 255);
+        }
+
+        /* Box shadow */
+
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 22px 12px;
+            margin: 10px 10px;
+            /* border: 2px solid rgb(15, 0, 128); */
+            background-color: rgb(133, 165, 166);
+            /* box-shadow: 10px 13px brown; */
+            /* box-shadow: -10px -13px brown; */
+            box-shadow: 7px 5px 10px 4px rgba(0, 0, 0, 0.638);
+            /* box-shadow: inset 3px 5px red; */
+
+        }
+
+        .card h2 {
+            text-shadow: 2px 2px 4px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ course</h2>
+            <p>I jave studied DSA of C++, this does not mean I will stop development course. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Id maiores incidunt culpa suscipit nihil,
+                adipisci iusto iure reiciendis, laborum architecto magni commodi sapiente totam maxime blanditiis beatae
+                officia, eum ut quod quasi voluptate? Molestias.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maiores incidunt culpa suscipit nihil,
+                adipisci iusto iure reiciendis, laborum architecto magni commodi sapiente totam maxime blanditiis beatae
+                officia, eum ut quod quasi voluptate? Molestias.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maiores incidunt culpa suscipit nihil,
+                adipisci iusto iure reiciendis, laborum architecto magni commodi sapiente totam maxime blanditiis beatae
+                officia, eum ut quod quasi voluptate? Molestias.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

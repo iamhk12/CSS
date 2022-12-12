@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid and Media queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer'
+                ;
+            }
+            aside{
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer'
+                ;
+            }
+            aside{
+                display: none;
+            }
+            
+            span{
+                display: block;
+                text-align: center;
+            }
+            
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: green;
+            }
+        }
+
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: cornflowerblue;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact us</span>
+        </nav>
+
+        <section class="bdr">
+            <h3>Learn Css in hindi</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, optio. Nihil asperiores laborum voluptatum dolorum officia deleniti vitae nisi nesciunt ipsum aut amet, modi sapiente magnam deserunt quas quidem. Deleniti vel obcaecati laudantium harum ex incidunt consequatur quas dignissimos, ea amet sint! Ea fuga eius facere optio voluptate molestiae minima eveniet? Eaque hic maiores dolorem earum quo velit odio natus accusantium dicta voluptatibus quas rem magnam qui suscipit officia fugit inventore esse, sit architecto corporis illo alias eos! Deserunt veniam ullam ab minus amet animi ipsa, quis numquam soluta commodi. Nisi, eos voluptates. Quia maxime quis cumque consequuntur, exercitationem debitis nisi enim perspiciatis recusandae adipisci obcaecati, veritatis tempora dolorum corporis neque incidunt minus id repellendus voluptates, veniam hic quod provident assumenda. Quam! </p>
+        </section>
+
+        <aside class="bdr">
+
+            <h2>More about us</h2>
+        </aside>
+
+        <footer class="bdr">
+            Cpoyright coding with HK -2022
+        </footer>
+    </div>
+</body>
+
+</html>
